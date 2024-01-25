@@ -1,0 +1,15 @@
+Valoració Top-to-Bottom
+1.Bathroom: 1/22. Complet fracàs. La majoria els categoritza erròniament com a Kitchen.
+2.Bedroom: 5/24. Fatal. Bastanta confusió amb Living-room (comprensible) i amb Kitchen (quan és blanc).
+3.Garage: 22/24. Molt encertat, tot i les moltes diferències entre els diferents garatges presentats.
+4.Kitchen: 23/24. Accuracy molt alta, però si calculéssim el recall, seria bastant baix, ja que moltes altres imatges també les categoritza com a Kitchen.
+5.Larder: 21/24. Sorprenent encertat. Segurament és perquè el tipus d'imatge és molt diferent.
+6.Laundry_room: 12/24. Si no troba rentadores, sol categoritzar-ho com Kitchen (suposo pel to blanquinós).
+7.Living_room: 20/24. Bastant exitós.
+TOTAL: 104/166 = 62.6%
+
+CONCLUSIÓ GENERAL.
+Sol tendir a Kitchen en la majoria de les altres categories, sent gran part dels errors comesos. En la resta, es pot considerar uns resultats bastant satisfactoris.
+Accuracy molt alta (80+%) en 4/7 classes, mitja en 1/2, i molt baixa en 2/7 altres classes.
+
+IDEES: Es provarà de fer un model només de Kitchen-Bathroom-Laundry_room, per tal de veure com es comporta, i si és capaç de diferenciar-los.

@@ -1,0 +1,14 @@
+Valoració Bottom-to-Top
+1.Bathroom:    17/24
+2.Bedroom:     14/24
+3.Garage:       8/24
+4.Kitchen:     22/24
+5.Larder:      15/24
+6.Living_room: 12/24
+TOTAL: 88/144 = 61%
+
+Curiositat. La 0-deteccions, la ha categoritzat com a garatge.
+Per tant, una part dels errors que són habitacions classificades com a garatge, que succeeix quan no hi detecta res.
+
+CONCLUSIÓ GENERAL.
+

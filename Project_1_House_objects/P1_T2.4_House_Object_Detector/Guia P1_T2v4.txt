@@ -1,0 +1,13 @@
+TASK 2.4. HOUSE ROOM CLASSIFIER + HOUSE OBJECT DETECTION
+
+Now we'll start creating a home object detector.
+
+VERSION 1:
+
+Firstly we'll create a list with objects within bathrooms
+
+Then we'll do the same with the bedroom
+
+VERSION 2:
+Now we will create a room classifier. Firstly we wanted to create a simple and direct room classifier (Top to Bottom strategy), but after contrasting info with my manager, he suggested to firstly detect basic objects, and use those detections to train a Machine Learning model (SVM in particular) which classifies the room (Bottom to Top strategy).
+

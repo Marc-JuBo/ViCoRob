@@ -1,0 +1,29 @@
+Avaluació dels 4 videos descarregats per fer car tracking.
+1) Facil:
+Aquest model funciona molt bé, detecta tots els cotxes que estan a prop de la intersecció, i fa el tracking degudament. És senzill ja que no hi ha cap impediment visual, i els cotxes van a velocitats tranquiles. 
+Costa una mica veure les etiquetes ja que es sobreposen bastant, però amb una interfaç visual més clara, veuriem que tot funciona bastant bé.
+L'únic error perceptible és que quan fa pampallugues perquè no té clar si allò és un cotxe o no, repeteix varies vegades la assignació de labels, i fa que l'índex de identificadors creixi molt ràpidament, arribant als 200, quan perel video hi passen 40-50 cotxes com a màxim.
+
+2) Lluny:
+Com que la càmara està allunyada, i els FPS no són molt ràpids, genera bastant de conflicte. 
+El problema principal és que quan els cotxes avancen, com que les seves bounding boxes es desplacen molt entre un frame i el següent, no té clar si és el mateix, i els hi borra els identificadors.
+Es podria millorar fent una estimació de la velocitat i direcció d'aquell vehicle, mirant també els del voltant, per veure la "velocitat de grup", o "velocitat del carril", i mirar si esta girant, per fer una predicció més encertada de la següent posició del vehicle en instants següents.
+
+3) Molts:
+Veiem que tot i que hi hagi molts més cotxes, la majoria del tracking encara funciona bastant bé. 
+Ocasionalment, perd algun vehicle i el re-anomena; de vegades és capaç de recuperar l'antic ID, però sovint n'assigna un de nou. 
+Sovint, quan perd vehicles, és en zones fosques, o al passar per passos de peatons, ja que confon el cotxe amb el mateix pas de zebra
+
+4) Rapid:
+Com al 3, als passos de zebra perden les labels, i costa molt de re-trobar-los. Quan estan parats, manté la mateixa label, i quan es mouen a poc a poc, també.
+
+
+CONCLUSIÓ:
+Per tal que BYTETracker funcioni correctament, és necessari que entre fotograma i fotograma, l'objecte a trackejar no es mogui molt, ja que sinó es perd. A més, si durant uns frmaes no es troba l'objecte, molt probablement també es perdrà. 
+MILLORES POTENCIALS
+Podriem entrenar un model millor per tal que no es confongués als passos de peatons, i així solucionariem un dels dos problemes (perdre l'objecte quan està uns frames sense ser detectat).
+Podriem buscar algun altre Tracking System, que ens pugui detectar objectes quan es mouen més distància entre frame i frame, que faci una estimació de quant s'ha mogut, basant-se en la informació dels últims frames. 
+De moment, però, podem considerar-nos satisfets amb el resultat.
+
+
+

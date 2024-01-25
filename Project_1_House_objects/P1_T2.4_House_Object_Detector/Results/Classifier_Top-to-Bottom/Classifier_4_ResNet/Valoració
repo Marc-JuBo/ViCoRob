@@ -1,0 +1,16 @@
+Valoració Top-to-Bottom
+1.Bathroom:     17/24
+2.Bedroom:      12/24
+3.Garage:       22/24
+4.Kitchen:      21/24
+5.Larder:       23/24
+6.Laundry_room: 20/24.
+7.Living_room:  19/24
+TOTAL: 134/168 = 79.8%
+
+CONCLUSIÓ GENERAL.
+A les dues que en el YOLOv5 actuava bastant malament, hem passat de 1 a 17 i de 5 a 12, per tant un èxit.
+A més, a la que actuava mes o menys bé, ha passat de 12 a 20, així que una millora remarcable.  
+Les tres que anaven molt bé, segueixen anant mes o menys igual de bé.
+
+Així que un èxit. Molt millors resultats amb aquesta xarxa.

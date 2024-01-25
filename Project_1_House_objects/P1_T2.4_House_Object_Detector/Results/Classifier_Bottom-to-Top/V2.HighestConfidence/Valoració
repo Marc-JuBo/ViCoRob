@@ -1,0 +1,10 @@
+Valoració Bottom-to-Top
+1.Bathroom:    18/19 (5x 0-detection)
+2.Bedroom:     22/24 
+3.Garage:      12/18 (6x 0-detection)
+4.Kitchen:     22/24
+5.Larder:      19/22 (2x 0-detection)
+6.Living_room: 20/22 (2x 0-detection)
+TOTAL: 113/132 = 85.6% 
+
+CONCLUSIÓ. Ha millorat moltissim la accuracy (de 62% a 85%). Sembla ser que només guardant la "confidence" més alta, i treient més variables, hem pogut ser més precisos en les prediccions. 

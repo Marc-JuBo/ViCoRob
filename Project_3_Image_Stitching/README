@@ -1,0 +1,13 @@
+README
+
+El projecte quatre es tracta d'image stitching per fer imatges panoràmiques.
+
+1) PORTRAIT Folder: Tenim dues imatges d'un quadre, i les barrejem. 
+	Aquest cas és fàcil, ja que el quadre és 2d i no té profunditat.
+2) DESPATX Folder: Tenim dues imatges fetes al despatx, i les barrejem. 
+	Aquest cas és una mica més dificil, ja que un lleugera translació de la càmara entre foto i foto, pot fer variar la perspectiva, i que no es puguin ajuntar.
+	Això s'accentua degut a que l'objecte a fotografiar està a prop de l'objectiu.
+3) PARKING Folder: Tenim tres imatges fetes al parking, i les barrejem.
+	Aquest és com el cas anterior, però amb tres imatges. 
+	La traslació de la càmara és menys important, ja que l'objecte a fotografiar està més lluny de la càmara.
+	A més, aquí jugarem amb el blending de les imatges, per fer que no es noti que són diferents imatges enganxades.

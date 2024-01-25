@@ -1,0 +1,14 @@
+Valoració Bottom-to-Top
+1.Bathroom: 17/24. Bastant bons resultats. Tot i així, semblaria que hauria de funcionar millor, tenint en compte lo específic que és el mobiliari del lavabo
+2.Bedroom: 14/24. Tendeix a encertar, però el resultat no es remarcable. 
+3.Garage: 8/24. Bastant malament.
+4.Kitchen: 22/24. Molt bé. Al tenir tants objectes característics, li és molt fàcil separar-los dels altres.
+5.Larder: 15/24. Encerta bastant sovint, però tenint en compte que el contingut és molt diferent de la resta d'habitacions (moltes més ampolles i llaunes), hauria d'obtenir més bons resultats.
+6.Living_room: 12/24. Resultat no especialmetn remarcable, però tenint en compte que un menjador no té res especialment característic més enllà dels sofàs, podem considerar que ha fet una feina prou bona.
+TOTAL: 88/144 = 61%
+
+Curiositat. La 0-deteccions, la ha categoritzat com a garatge.
+Per tant, una part dels errors que són habitacions classificades com a garatge, que succeeix quan no hi detecta res.
+
+CONCLUSIÓ GENERAL.
+

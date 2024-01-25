@@ -1,0 +1,16 @@
+1) Trained_vehicle_model:
+Inicialment, preteniem separar cotxes de camions d'autobusos, però al ser vistes aèries, sovint confonia els camions amb cotxes amb autobusos, i això dificultaria una mica el seguiment d'objectes, alhora que fa que perdem precisió en les prediccions. 
+Tot i aixì, mirant els cotxes, veiem que tenim un 82% de precisió i un 91% de recall. Vol dir que de vegades fem miss-detections, però de tots els cotxes presents a la imatge, en detectem la gran majoria.
+Observant la quantitat d'instàncies, veiem que la poca quantitat de camions, busos i minibusos fan que la precisió i recall general decaiguin.
+
+2) YOLO-COCO model:
+Com que el model YOLOv5 entrenat amb el COCO dataset detecta també camions cotxes i autobusos, fem la comparativa amb el model sense entrenar, a veure si ho detecta correctament o té molt d'error.
+Veiem que amb els cotxes, té una precisió del 50%, i un recall del 18%. Assumim que deu ser perquè està entrenat per detectar cotxes des del costat, i no pas amb vista aèria.
+Tot i aixì, podem concloure que està bé haver entrenat el nostre propi model
+
+3) Trained_all-cars_model.
+Veient que el model 1 tenia com a problema que sovint confonia cotxes amb camions amb autobusos, provarem de canviar les labels totes a COTXE (tant camions com autobusos), i mirem com funciona el model.
+Sorprenentment, obtenim una precisió i recall del 98.7% en els dos casos, amb un mAP50 de 99.4% (es a dir que la area detectada coincideix pràcticament perfecte amb la àrea esperada), així que ho pdem considerar un èxit rotund. 
+Hem de considerar que potser ens fa overfitting ja que al train i a validation hi ha imatges molt semblants (preses a la mateixa localització), però tot i així podem consdierar que el model és un èxit.
+
+CONCLUSIÓ: El model mostra molts més bons resultats si considerem tots els vehicles com a cotxes.
